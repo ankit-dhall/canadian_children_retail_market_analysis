@@ -1,7 +1,7 @@
 
 libname mylib '/home/u50059513/canadian_children_retail_market_analysis/cleaned_data';
 
-PROC IMPORT DATAFILE = '/home/u50059513/Group Project/Data/Census_Age_Location.csv' OUT = mylib.Census_Age_Location 
+PROC IMPORT DATAFILE = '/home/u50059513/canadian_children_retail_market_analysis/cleaned_data/Census_Age_Location.csv' OUT = mylib.Census_Age_Location 
 DBMS = CSV REPLACE;
 	getnames = yes;
 	guessingrows= max;
@@ -251,7 +251,7 @@ RUN;
 
 *Checking Median Income for Top 10 Prospective Cities;
 
-PROC IMPORT DATAFILE = '/home/u50059513/Group Project/Data/CLEANED AFTER TAX INCOME 98-402-X2016006-T2-CSD-Eng.csv'
+PROC IMPORT DATAFILE = '/home/u50059513/canadian_children_retail_market_analysis/cleaned_data/CLEANED AFTER TAX INCOME 98-402-X2016006-T2-CSD-Eng.csv'
 	out = median_income006 dbms=csv replace;
 	getnames=yes;
 	guessingrows=max;
